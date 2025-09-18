@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Demo Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        marquee {
+            font-weight: bold;
+            color: red;
+            font-size: 18px;
+        }
+		/* Parent container to align divs horizontally */
+        #parentDiv {
+            display: flex; /* Enables horizontal arrangement */
+            justify-content: space-around; /* Spaces divs evenly */
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Styling for child divs */
+        .childDiv {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            flex: 1; /* Makes each div equally spaced */
+            margin: 10px;
+            border: 1px solid gray;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        /* Image container inside Gallery 2 */
+        .imageContainer {
+            display: flex; /* Aligns images horizontally */
+            justify-content: center; /* Centers images */
+			
+			
+        }
+        /* Image styling */
+        img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        #nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+        }
+        #nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+        #nav a:hover {
+            background-color: #575757;
+			font-size: 24px;
+			font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+        }
+        #container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+       
+        .section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        ul, ol {
+            padding-left: 30px;
+        }
+        #footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        Welcome to My Stylish Demo Website
+    </div>
+
+    <!-- Marquee Text -->
+    <marquee>Enjoy exploring different HTML tags on this page!</marquee>
+
+    <!-- Navigation Links -->
+    <div id="nav">
+        <a href="#About">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <div id="container">
+        
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <p>This webpage demonstrates various HTML tags with internal styling.</p>
+            <b>HTML is the foundation of web development!</b>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="section" id="gallery">
+            <h3>Gallery</h3>
+             <div id="parentDiv">
+        
+        <!-- First Div with Images -->
+        <div class="childDiv">
+            <h3>Gallery 1</h3>
+            <img src="images/download (1).jpg" alt="Image 1">
+            <img src="images/download.jpg" alt="Image 2">
+        </div>
+
+        <!-- Second Div with Images -->
+        <div class="childDiv">
+            <h3>Gallery 2</h3> 
+			<div class="imageContainer">
+            <img src="images/feminine01.jpg" alt="Image 3">
+            <img src="images/photo-1433086966358-54859d0ed716.avif" alt="Image 4">
+			</div>
+        </div>
+
+    </div>
+
+        </div>
+
+        <!-- List Example -->
+        <div class="section">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Web Design</li>
+                <li>Development</li>
+                <li>SEO Optimization</li>
+            </ul>
+            <h5>Our Process</h5>
+            <ol>
+                <li>Requirement Analysis</li>
+                <li>Design & Development</li>
+                <li>Testing & Deployment</li>
+            </ol>
+        </div>
+
+        <!-- Definition List -->
+        <div class="section">
+            <h6>Glossary</h6>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="section">
+            <h2>Pricing Table</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Development</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>SEO</td>
+                    <td>$200</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        © 2025 Stylish Demo Website. All Rights Reserved.
+    </div>
+
+</body>
+</html>
